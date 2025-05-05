@@ -34,6 +34,9 @@ function drawBoss() {
     if (bossLives > 0) {
         ctx.fillStyle = "black";
         ctx.fillRect(boss.x, boss.y, boss.width, boss.height);
+        ctx.fillStyle = "red";
+        ctx.font = "20px Arial";
+        ctx.fillText("ENTITY 303", boss.x + 10, boss.y - 10);
     }
 }
 
@@ -91,3 +94,4 @@ canvas.addEventListener("click", (event) => {
         location.reload();
     }
 });
+
